@@ -27,26 +27,48 @@
                 >
               </div>
               <nav class="navigation">
-                <ul class="movement-links">
-                  <li><a class="visited-a" href="./index.html">Agencja</a></li>
-                  <li><a href="./portfolio.html">Portfolio</a></li>
-                  <li><a href="/kontakt"> Kontakt</a></li>
+                <ul class="navigation__menu">
+                  <li class="navigation__menu-list">
+                    <a
+                      class="navigation__movement-links visited-a"
+                      href="./index.html"
+                      >Agencja</a
+                    >
+                  </li>
+                  <li class="navigation__menu-list">
+                    <a
+                      class="navigation__movement-links"
+                      href="./portfolio.html"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="navigation__menu-list">
+                    <a class="navigation__movement-links" href="/kontakt">
+                      Kontakt</a
+                    >
+                  </li>
                 </ul>
               </nav>
             </div>
             <div class="contact-wrapper">
               <ul class="contacts">
-                <li class="mail">
-                  <a class="contatcs-width" href="mailto:info@devstudio.com">
-                    <svg class="mail-icon" height="12px">
+                <li class="contacts__list">
+                  <a
+                    class="contacts__info contatcs-width"
+                    href="mailto:info@devstudio.com"
+                  >
+                    <svg class="contacts__icon" height="12px">
                       <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>
                     <span>info@devstudio.com</span>
                   </a>
                 </li>
-                <li class="phone">
-                  <a class="contatcs-width" href="tel:+48111111111">
-                    <svg class="phone-icon" width="10px" height="16px">
+                <li class="contacts__list">
+                  <a
+                    class="contacts__info contatcs-width"
+                    href="tel:+48111111111"
+                  >
+                    <svg class="contacts__icon" width="10px" height="16px">
                       <use href="./images/icons.svg#icon-smartphone"></use>
                     </svg>
                     <span>+48 111 111 111</span></a
@@ -62,10 +84,14 @@
     <main>
       <section class="order-section">
         <div class="container">
-          <div class="order-class">
-            <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <div class="order">
+            <h1 class="order__headline">
+              EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+            </h1>
             <div class="button-spacing">
-              <button type="button" data-modal-open>Zamów usługe</button>
+              <button class="order__button" type="button" data-modal-open>
+                Zamów usługe
+              </button>
             </div>
           </div>
         </div>
@@ -74,50 +100,50 @@
         <div class="container">
           <div class="lorem-ipsum-padding">
             <ul class="lorem-ipsum">
-              <li>
-                <div class="lorem-svg">
+              <li class="lorem-ipsum__list">
+                <div class="lorem-ipsum__images">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-antenna"></use>
                   </svg>
                 </div>
-                <h4>LOREM IPSUM</h4>
-                <p>
+                <h4 class="lorem-ipsum__titles">LOREM IPSUM</h4>
+                <p class="lorem-ipsum__contents">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                   vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li>
-                <div class="lorem-svg">
+              <li class="lorem-ipsum__list">
+                <div class="lorem-ipsum__images">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-clock"></use>
                   </svg>
                 </div>
-                <h4>LOREM IPSUM</h4>
-                <p>
+                <h4 class="lorem-ipsum__titles">LOREM IPSUM</h4>
+                <p class="lorem-ipsum__contents">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                   vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li>
-                <div class="lorem-svg">
+              <li class="lorem-ipsum__list">
+                <div class="lorem-ipsum__images">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-diagram"></use>
                   </svg>
                 </div>
-                <h4>LOREM IPSUM</h4>
-                <p>
+                <h4 class="lorem-ipsum__titles">LOREM IPSUM</h4>
+                <p class="lorem-ipsum__contents">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                   vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li>
-                <div class="lorem-svg">
+              <li class="lorem-ipsum__list">
+                <div class="lorem-ipsum__images">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-astronaut"></use>
                   </svg>
                 </div>
-                <h4>LOREM IPSUM</h4>
-                <p>
+                <h4 class="lorem-ipsum__titles">LOREM IPSUM</h4>
+                <p class="lorem-ipsum__contents">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                   vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
@@ -128,45 +154,49 @@
       </section>
       <section class="what-we-do-section">
         <div class="container">
-          <div class="what-we-do-wrapper">
-            <h2 class="what-we-do">Czym się zajmujemy</h2>
-            <ul class="pictures-what-we-do">
-              <li>
-                <figue class="pictures-what-we-do-box">
+          <div class="what-we-do">
+            <h2 class="what-we-do__headline">Czym się zajmujemy</h2>
+            <ul class="what-we-do__showcase">
+              <li class="what-we-do__list">
+                <figue class="what-we-do__box">
                   <img
                     src="./images/box1.jpg"
                     alt="kodowanie"
                     width="370"
                     height="294"
                   />
-                  <figcaption class="pictures-what-we-do-desrciption">
-                    <h5>Aplikacje komputerowe</h5>
+                  <figcaption class="what-we-do__desrciption-background">
+                    <h5 class="what-we-do__desrciption">
+                      Aplikacje komputerowe
+                    </h5>
                   </figcaption>
                 </figue>
               </li>
-              <li>
-                <figure class="pictures-what-we-do-box">
+              <li class="what-we-do__list">
+                <figure class="what-we-do__box">
                   <img
                     src="./images/box2.jpg"
                     alt="tworzenie aplikacje"
                     width="370"
                     height="294"
                   />
-                  <figcaption class="pictures-what-we-do-desrciption">
-                    <h5>Aplikacje mobilne</h5>
+                  <figcaption class="what-we-do__desrciption-background">
+                    <h5 class="what-we-do__desrciption">Aplikacje mobilne</h5>
                   </figcaption>
                 </figure>
               </li>
-              <li>
-                <figure class="pictures-what-we-do-box">
+              <li class="what-we-do__list">
+                <figure class="what-we-do__box">
                   <img
                     src="./images/box3.jpg"
                     alt="tworzenie grafiki"
                     width="370"
                     height="294"
                   />
-                  <figcaption class="pictures-what-we-do-desrciption">
-                    <h5>Rozwiązania graficzne</h5>
+                  <figcaption class="what-we-do__desrciption-background">
+                    <h5 class="what-we-do__desrciption">
+                      Rozwiązania graficzne
+                    </h5>
                   </figcaption>
                 </figure>
               </li>
@@ -177,11 +207,11 @@
 
       <section class="team-section">
         <div class="container">
-          <div class="team-wrapper">
-            <h2 class="team">Nasz zespół</h2>
+          <div class="team">
+            <h2 class="team__headline">Nasz zespół</h2>
             <ul class="team-description">
               <li>
-                <figure class="team-box">
+                <figure class="team__member">
                   <img
                     src="./images/jhon-doe1.jpg"
                     alt="zdjęcie przedstawia jhon doe, uśmiechający sie mężczyzna z brodą krótkimi włosami i okularami"
@@ -189,11 +219,15 @@
                     height="260"
                   />
                   <figcaption>
-                    <h4>Jhon doe</h4>
-                    <p>Product Designer</p>
-                    <ul class="social-media">
+                    <h4 class="team__name">Jhon doe</h4>
+                    <p class="team__function">Product Designer</p>
+                    <ul class="team__social-media">
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -204,7 +238,11 @@
                         </svg>
                       </li>
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -215,7 +253,11 @@
                         </svg>
                       </li>
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -226,7 +268,11 @@
                         </svg>
                       </li>
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -241,7 +287,7 @@
                 </figure>
               </li>
               <li>
-                <figure class="team-box">
+                <figure class="team__member">
                   <img
                     src="./images/jhon-doe2.jpg"
                     alt=" zdjęcie przedstawia jhon doe, uśmiechającą się kobiete w okularach z długimi blond włosami"
@@ -249,11 +295,15 @@
                     height="260"
                   />
                   <figcaption>
-                    <h4>Jhon doe</h4>
-                    <p>Frontend Developer</p>
-                    <ul class="social-media">
+                    <h4 class="team__name">Jhon doe</h4>
+                    <p class="team__function">Frontend Developer</p>
+                    <ul class="team__social-media">
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -264,7 +314,11 @@
                         </svg>
                       </li>
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -275,7 +329,11 @@
                         </svg>
                       </li>
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -286,7 +344,11 @@
                         </svg>
                       </li>
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -301,7 +363,7 @@
                 </figure>
               </li>
               <li>
-                <figure class="team-box">
+                <figure class="team__member">
                   <img
                     src="./images/jhon-doe3.jpg"
                     alt=" zdjęcie przedstawia jhon doe,  uśmiechającego sie mężczyzne o krótkich włosach z brodą  "
@@ -309,11 +371,15 @@
                     height="260"
                   />
                   <figcaption>
-                    <h4>Jhon doe</h4>
-                    <p>Marketing</p>
-                    <ul class="social-media">
+                    <h4 class="team__name">Jhon doe</h4>
+                    <p class="team__function">Marketing</p>
+                    <ul class="team__social-media">
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -324,7 +390,11 @@
                         </svg>
                       </li>
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -335,7 +405,11 @@
                         </svg>
                       </li>
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -346,7 +420,11 @@
                         </svg>
                       </li>
                       <li>
-                        <svg width="44px" height="44px">
+                        <svg
+                          class="team__icons-background"
+                          width="44px"
+                          height="44px"
+                        >
                           <use
                             x="12"
                             y="12"
@@ -361,18 +439,22 @@
                 </figure>
               </li>
               <li>
-                <figure class="team-box">
+                <figure class="team__member">
                   <img
                     src="./images/jhon-doe4.jpg"
                     alt="zdjęcie przedstawia jhon doe, uśmiechający sie mężczyzna z brodą krótkimi włosami i okularami "
                     width="270"
                     height="260"
                   />
-                  <h4>Jhon doe</h4>
-                  <p>UI Designer</p>
-                  <ul class="social-media">
+                  <h4 class="team__name">Jhon doe</h4>
+                  <p class="team__function">UI Designer</p>
+                  <ul class="team__social-media">
                     <li>
-                      <svg width="44px" height="44px">
+                      <svg
+                        class="team__icons-background"
+                        width="44px"
+                        height="44px"
+                      >
                         <use
                           x="12"
                           y="12"
@@ -383,7 +465,11 @@
                       </svg>
                     </li>
                     <li>
-                      <svg width="44px" height="44px">
+                      <svg
+                        class="team__icons-background"
+                        width="44px"
+                        height="44px"
+                      >
                         <use
                           x="12"
                           y="12"
@@ -394,7 +480,11 @@
                       </svg>
                     </li>
                     <li>
-                      <svg width="44px" height="44px">
+                      <svg
+                        class="team__icons-background"
+                        width="44px"
+                        height="44px"
+                      >
                         <use
                           x="12"
                           y="12"
@@ -405,7 +495,11 @@
                       </svg>
                     </li>
                     <li>
-                      <svg width="44px" height="44px">
+                      <svg
+                        class="team__icons-background"
+                        width="44px"
+                        height="44px"
+                      >
                         <use
                           x="12"
                           y="12"

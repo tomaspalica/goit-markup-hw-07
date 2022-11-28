@@ -93,7 +93,7 @@ body {
 .navigation {
   display: flex;
 }
-.movement-links {
+.navigation__menu {
   display: flex;
   width: 254px;
   gap: 30px;
@@ -102,7 +102,7 @@ body {
   box-sizing: content-box;
 }
 
-.movement-links a {
+.navigation__movement-links {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -142,11 +142,11 @@ body {
   bottom: -32px;
   left: 0;
 }
-.movement-links li {
+.navigation__menu-list {
   list-style-type: none;
 }
 
-.movement-links a:hover {
+.navigation__movement-links:hover {
   color: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -158,7 +158,12 @@ body {
   width: auto;
   padding-left: 0px;
 }
-.contacts a {
+.contacts__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts__info {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -178,35 +183,32 @@ body {
 
   color: #ffffff;
 }
-.contacts li {
+.contacts__list {
   list-style-type: none;
 }
-.contacts a:hover {
+.contacts__info:hover {
   color: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail-icon {
-  width: 16px;
-  --color1: currentColor;
-}
-.phone-icon {
+
+.contacts__icon {
   --color1: currentColor;
   width: 16px;
 }
-.contacts a:hover svg {
+.contacts__info:hover .contacts__icon {
   fill: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.order-class {
+.order {
   height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.order-section h1 {
+.order__headline {
   font-weight: 900;
   font-size: 44px;
   line-height: 116%;
@@ -223,7 +225,7 @@ body {
   margin-bottom: 0px;
   padding-bottom: 30px;
 }
-.order-section button {
+.order__button {
   width: 200px;
   height: 50px;
 
@@ -242,7 +244,7 @@ body {
 
   border: none;
 }
-.order-section button:hover {
+.order__button:hover {
   background-color: #757575;
   color: #000000;
   transition-duration: 250ms;
@@ -255,7 +257,7 @@ body {
   margin-top: 94px;
   margin-bottom: 94px;
 }
-.lorem-svg {
+.lorem-ipsum__images {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -264,14 +266,14 @@ body {
   align-items: center;
 }
 
-.lorem-ipsum h4 {
+.lorem-ipsum__titles {
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.lorem-ipsum p {
+.lorem-ipsum__contents {
   font-size: 14px;
   line-height: 146%;
   /* or 171% */
@@ -280,14 +282,14 @@ body {
 
   color: #757575;
 }
-.lorem-ipsum li {
+.lorem-ipsum__list {
   list-style-type: none;
   width: 270px;
 }
-.what-we-do-wrapper {
+.what-we-do {
   padding-bottom: 94px;
 }
-.what-we-do {
+.what-we-do__headline {
   font-weight: 700;
   font-size: 36px;
   line-height: 100%;
@@ -297,7 +299,7 @@ body {
   margin-bottom: 0px;
   padding-bottom: 50px;
 }
-.pictures-what-we-do {
+.what-we-do__showcase {
   display: flex;
   flex-direction: row;
   width: 1170px;
@@ -306,16 +308,16 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.pictures-what-we-do li {
+.what-we-do__list {
   list-style-type: none;
 }
-.pictures-what-we-do-box {
+.what-we-do__box {
   position: relative;
 }
-.pictures-what-we-do-box > img {
+.what-we-do__box > img {
   display: block;
 }
-.pictures-what-we-do-desrciption {
+.what-we-do__desrciption-background {
   display: flex;
   position: absolute;
   background: rgba(47, 48, 58, 0.8);
@@ -325,7 +327,7 @@ body {
 
   bottom: 0;
 }
-.pictures-what-we-do-desrciption h5 {
+.what-we-do__desrciption {
   color: #ffffff;
   letter-spacing: 0.03em;
   font-weight: 700;
@@ -335,11 +337,11 @@ body {
   margin-top: 27px;
   margin-bottom: 27px;
 }
-.team-wrapper {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team {
+.team__headline {
   font-weight: 700;
   font-size: 36px;
   line-height: 100%;
@@ -355,7 +357,14 @@ body {
   padding: 0 0;
   margin: 0 0;
 }
-.team-description h4 {
+.team__member {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
@@ -367,7 +376,7 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.team-description p {
+.team__function {
   font-size: 16px;
   line-height: 100%;
   /* identical to box height */
@@ -380,6 +389,23 @@ body {
   margin-bottom: 0px;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+.team__social-media {
+  display: flex;
+  padding-left: 32px;
+}
+.team__icons-background {
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border-radius: 100%;
+}
+.team__icons-background:hover {
+  background-color: #2196f3;
+  --color1: var(--background-color);
+  border-radius: 100%;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-description li {
   list-style-type: none;
@@ -534,12 +560,6 @@ figure {
 .contacts-bellow a:hover {
   color: #2196f3;
 }
-.team-box {
-  background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
 .main-flex {
   display: flex;
   align-items: center;
@@ -557,35 +577,10 @@ figure {
   align-items: center;
 }
 
-.mail {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.phone {
-  display: flex;
-  align-items: center;
-}
 .contacts-bellow-padding {
   padding-top: 9px;
 }
-.social-media {
-  display: flex;
-  padding-left: 32px;
-}
-.social-media svg {
-  margin-right: 10px;
-  margin-bottom: 30px;
-  border-radius: 100%;
-}
-.social-media svg:hover {
-  background-color: #2196f3;
-  --color1: var(--background-color);
-  border-radius: 100%;
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .clients-wrapper {
   padding-top: 94px;
   padding-bottom: 94px;
